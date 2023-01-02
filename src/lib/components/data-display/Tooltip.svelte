@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Color } from '../../enums/color.enum';
-	import { Position } from '../../enums/position.enum';
+	import { Color } from '$lib/enums/color.enum';
+	import { Position } from '$lib/enums/position.enum';
 
 	export let tip: string;
 	export let color: Color | string = Color.Neutral;
