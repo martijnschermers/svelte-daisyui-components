@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { Tab as TabInterface } from '../../interfaces/tab.interface';
-	import Tab from './Tab.svelte';
+	import type { TabType } from '$lib/interfaces/tab.interface';
+	import Tab from '$lib/components/navigation/Tab.svelte';
 
-	export let tabs: TabInterface[] = [];
+	export let tabs: TabType[] = [];
 	export let boxed: boolean = false;
 </script>
 

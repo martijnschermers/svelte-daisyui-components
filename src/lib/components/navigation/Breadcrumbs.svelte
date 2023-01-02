@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Size } from '../../enums/size.enum';
-	import type { Link } from '../../interfaces/link.interface';
+	import { Size } from '$lib/enums/size.enum';
+	import type { LinkType } from '$lib/interfaces/link.interface';
 
-	export let links: Link[] = [];
+	export let links: LinkType[] = [];
 	export let size: Size | string = '';
 </script>
 

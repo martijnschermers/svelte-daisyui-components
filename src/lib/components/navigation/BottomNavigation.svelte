@@ -1,11 +1,9 @@
 <script lang="ts">
-	import { Size } from '../../enums/size.enum';
-	import type { Button } from '../../interfaces/button.interface';
+	import { Size } from '$lib/enums/size.enum';
+	import type { ButtonType } from '$lib/interfaces/button.interface';
 
-	export let buttons: Button[];
+	export let buttons: ButtonType[] = [];
 	export let size: Size | string = Size.Md;
-
-	//TODO: extract button to external component instead of interface
 </script>
 
 <div
@@ -30,5 +28,7 @@
 				<span class="btm-nav-label">{button.title}</span>
 			{/if}
 		</button>
+	{:else}
+		<slot />
 	{/each}
 </div>

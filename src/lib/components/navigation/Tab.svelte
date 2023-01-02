@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Size } from '../../enums/size.enum';
+	import { Size } from '$lib/enums/size.enum';
 
 	export let href: string;
 	export let bordered: boolean = false;

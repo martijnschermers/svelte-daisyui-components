@@ -1,16 +1,17 @@
 <script lang="ts">
-	import { Size } from '../../enums/size.enum';
-	import type { Button as ButtonInterface } from '../../interfaces/button.interface';
-	import Button from '../actions/Button.svelte';
+	import { Size } from '$lib/enums/size.enum';
+	import type { ButtonType } from '$lib/interfaces/button.interface';
+	import Button from '$lib/components/actions/Button.svelte';
+	import ButtonGroup from '$lib/components/layout/ButtonGroup.svelte';
 
-	export let buttons: ButtonInterface[] = [];
+	export let buttons: ButtonType[] = [];
 	export let size: Size | string = Size.Md;
 </script>
 
-<div class="btn-group">
+<ButtonGroup>
 	{#each buttons as button}
-		<Button {size} disabled={button.disabled} active={button.active}>{button.title}</Button>
+		<Button on:click on:change {size} disabled={button.disabled} active={button.active}>{button.title}</Button>
 	{:else}
 		<slot />
 	{/each}
-</div>
+</ButtonGroup>

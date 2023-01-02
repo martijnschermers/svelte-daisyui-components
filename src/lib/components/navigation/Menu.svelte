@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Color } from '../../enums/color.enum';
-	import type { Link } from '../../interfaces/link.interface';
-	import MenuItem from './MenuItem.svelte';
+	import { Color } from '$lib/enums/color.enum';
+	import type { LinkType } from '$lib/interfaces/link.interface';
+	import MenuItem from '$lib/components/navigation/MenuItem.svelte';
 
-	export let items: Link[] = [];
+	export let items: LinkType[] = [];
 	export let color: Color | string = Color.Primary;
 	export let rounded: boolean = false;
 	export let compact: boolean = false;

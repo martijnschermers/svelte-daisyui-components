@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { Step as StepInterface } from '../../interfaces/step.interface';
-	import Step from './Step.svelte';
+	import type { StepType } from '$lib/interfaces/step.interface';
+	import Step from '$lib/components/navigation/Step.svelte';
 
-	export let steps: StepInterface[] = [];
+	export let steps: StepType[] = [];
 	export let vertical: boolean = false;
 	export let responsive: boolean = false;
 </script>
