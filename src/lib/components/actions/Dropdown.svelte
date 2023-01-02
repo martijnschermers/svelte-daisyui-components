@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Position } from '../../enums/position.enum';
+	import { Position } from '$lib/enums/position.enum';
 
 	export let position: Position = Position.Bottom;
 	export let open: boolean = false;
