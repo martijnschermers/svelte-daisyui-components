@@ -1,6 +1,6 @@
 import type { Size } from "../enums/size.enum";
 
-export interface Tab {
+export interface TabType {
     text: string;
     href: string;
     size: Size;

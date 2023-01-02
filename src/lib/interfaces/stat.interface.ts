@@ -1,10 +1,10 @@
-import type { Button } from "./button.interface";
-import type { Image } from "./image.interface";
+import type { ButtonType } from "./button.interface";
+import type { ImageType } from "./image.interface";
 
-export interface Stat {
+export interface StatType {
     title: string,
     value: string,
     description?: string,
-    image?: Image,
-    actions?: Button[],
+    image?: ImageType,
+    actions?: ButtonType[],
 }

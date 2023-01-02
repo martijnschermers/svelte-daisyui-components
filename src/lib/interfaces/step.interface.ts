@@ -1,6 +1,6 @@
 import type { Color } from "../enums/color.enum";
 
-export interface Step {
+export interface StepType {
     text: string; 
     data?: string; 
     color?: Color; 

@@ -1,6 +1,6 @@
 import type { Size } from "../enums/size.enum";
 
-export interface Button {
+export interface ButtonType {
     title?: string;
     svgPath?: string;
     active?: boolean;
