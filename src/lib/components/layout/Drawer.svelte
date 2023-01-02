@@ -4,7 +4,7 @@
 	export let end: boolean = false;
 </script>
 
-<div class="drawer" class:drawer-mobile={mobile} class:drawer-end={end}>
+<div class="drawer {$$props.class ? $$props.class : ''}" class:drawer-mobile={mobile} class:drawer-end={end}>
 	<input {id} type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content">
 		<label for={id} class="btn btn-primary drawer-button" class:lg:hidden={mobile}>
