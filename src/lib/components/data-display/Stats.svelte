@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Color } from '../../enums/color.enum';
-	import type { Stat as StatInterface } from '../../interfaces/stat.interface';
-	import Button from '../actions/Button.svelte';
-	import Stat from './Stat.svelte';
+	import type { StatType } from '$lib/interfaces/stat.interface';
+	import { Color } from '$lib/enums/color.enum';
+	import Button from '$lib/components/actions/Button.svelte';
+	import Stat from '$lib/components/data-display/Stat.svelte';
 
-	export let stats: StatInterface[] = [];
+	export let stats: StatType[] = [];
 	export let color: Color | string = Color.Neutral;
 	export let vertical: boolean = false;
 	export let centered: boolean = false;
@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="stats shadow"
+	class="stats shadow {$$props.class ? $$props.class : ''}"
 	class:stats-vertical={vertical || responsive}
 	class:lg:stats-horizontal={responsive}
 	class:bg-primary={color == Color.Primary}

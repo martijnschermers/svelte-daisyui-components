@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Color } from '../../enums/color.enum';
+	import { Color } from '$lib/enums/color.enum';
 
 	export let color: Color | string = '';
 	export let bordered: boolean = false;
@@ -44,5 +44,5 @@
 			<slot name="actions" />
 		</div>
 	</div>
-	<slot name="bottomImage" />
+	<slot name="bottom-image" />
 </div>

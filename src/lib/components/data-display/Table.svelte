@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { Row as RowInterface } from '../../interfaces/row.interface';
-	import Row from './Row.svelte';
+	import type { RowType } from '$lib/interfaces/row.interface';
+	import Row from '$lib/components/data-display/Row.svelte';
 
 	export let head: string[] = [];
-	export let rows: RowInterface[] = [];
+	export let rows: RowType[] = [];
 	export let compact: boolean = false;
 	export let zebra: boolean = false;
 </script>

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { Image } from '../../interfaces/image.interface';
+	import type { ImageType } from '$lib/interfaces/image.interface';
 
-	export let images: Image[];
+	export let images: ImageType[] = [];
 	export let numbers: boolean = false;
 	export let arrows: boolean = false;
     export let center: boolean = false; 

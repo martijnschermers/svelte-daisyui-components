@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Color } from '../../enums/color.enum';
+	import { Color } from '$lib/enums/color.enum';
 
 	export let value: number;
 	export let size: string = '4rem';

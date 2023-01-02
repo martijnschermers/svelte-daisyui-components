@@ -7,6 +7,6 @@
 	}, 1000);
 </script>
 
-<span class="countdown">
+<span class="countdown {$$props.class ? $$props.class : ''}">
 	<span style:--value={value} />
 </span>
