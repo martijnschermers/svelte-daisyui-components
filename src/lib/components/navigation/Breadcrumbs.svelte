@@ -1,0 +1,41 @@
+<script lang="ts">
+	import { Size } from '../../enums/size.enum';
+	import type { Link } from '../../interfaces/link.interface';
+
+	export let links: Link[] = [];
+	export let size: Size | string = '';
+</script>
+
+<div class="text-sm breadcrumbs {$$props.class ? $$props.class : ''}" 
+    class:max-w-xs={size == Size.Xs}
+    class:max-w-sm={size == Size.Sm}
+    class:max-w-md={size == Size.Md}
+    class:max-w-lg={size == Size.Lg}
+>
+	<ul>
+		{#each links as link}
+			<li>
+				<a href={link.href}>
+					{#if link.svgPath}
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							class="w-4 h-4 mr-2 stroke-current"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d={link.svgPath}
+							/>
+						</svg>
+					{/if}
+					{link.text}
+				</a>
+			</li>
+		{:else}
+			<slot />
+		{/each}
+	</ul>
+</div>
