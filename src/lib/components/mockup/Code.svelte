@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Color } from '../../enums/color.enum';
+	import { Color } from '$lib/enums/color.enum';
 
 	export let color: Color | string = Color.Neutral;
 </script>
