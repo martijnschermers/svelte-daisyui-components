@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { Size } from '$lib/enums/size.enum';
-	import type { Image } from '$lib/interfaces/image.interface';
-	import Card from '$lib/components/data-display/Card.svelte';
-	import Kbd from '$lib/components/data-display/Kbd.svelte';
+	import type { Image, ButtonInterface } from '$lib';
+	import { Card, Kbd } from '$lib';
 	import Progress from '$lib/components/data-display/Progress.svelte';
 	import Alert from '$lib/components/data-display/Alert.svelte';
 	import Button from '$lib/components/actions/Button.svelte';
