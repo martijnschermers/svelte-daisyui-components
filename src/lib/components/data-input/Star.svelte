@@ -6,8 +6,6 @@
 	export let half: boolean = false;
 
 	index += 1;
-
-	//TODO: give star appropiate half mask: 1 or 2
 </script>
 
 <input type="radio" {name} checked={checked === index} class="mask mask-{mask}" />

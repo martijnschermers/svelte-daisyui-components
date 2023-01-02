@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { Color } from '../../enums/color.enum';
-	import { Size } from '../../enums/size.enum';
+	import { Color } from '$lib/enums/color.enum';
+	import { Size } from '$lib/enums/size.enum';
 
 	export let color: Color | string = Color.Primary;
 	export let size: Size | string = Size.Md;

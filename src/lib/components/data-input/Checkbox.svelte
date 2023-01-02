@@ -1,11 +1,35 @@
 <script lang="ts">
-	import { Size } from '../../interfaces/size.enum';
+	import { Color } from '$lib/enums/color.enum';
+	import { Size } from '$lib/enums/size.enum';
 
-	export let color: string = '';
-	export let size: Size = Size.Normal;
+	export let color: Color | string = Color.Neutral;
+	export let size: Size | string = Size.Md;
 	export let checked: boolean = true;
 	export let indeterminate: boolean = false;
 	export let disabled: boolean = false;
 </script>
 
-<input type="checkbox" class="checkbox checkbox-{size} checkbox-{color}" {indeterminate} {disabled} {checked} />
+<div class="form-control">
+	<label class="label cursor-pointer">
+		<span class="label-text"><slot /></span>
+	</label>
+</div>
+
+<input
+	type="checkbox"
+	class="checkbox {$$props.class ? $$props.class : ''}"
+	class:checkbox-xs={size == Size.Xs}
+	class:checkbox-sm={size == Size.Sm}
+	class:checkbox-md={size == Size.Md}
+	class:checkbox-lg={size == Size.Lg}
+	class:checkbox-primary={color == Color.Primary}
+	class:checkbox-secondary={color == Color.Secondary}
+	class:checkbox-accent={color == Color.Accent}
+	class:checkbox-info={color == Color.Info}
+	class:checkbox-success={color == Color.Success}
+	class:checkbox-warning={color == Color.Warning}
+	class:checkbox-error={color == Color.Error}
+	{indeterminate}
+	{disabled}
+	{checked}
+/>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Star from './Star.svelte';
+	import Star from '$lib/components/data-input/Star.svelte';
 
 	export let name: string;
 	export let mask: 'star' | 'star-2' | 'heart' = 'star';
@@ -13,7 +13,7 @@
 	}
 </script>
 
-<div class="rating" class:rating-half={half}>
+<div class="rating {$$props.class ? $$props.class : ''}" class:rating-half={half}>
 	{#if hidden}
 		<input type="radio" {name} class="rating-hidden" />
 	{/if}
