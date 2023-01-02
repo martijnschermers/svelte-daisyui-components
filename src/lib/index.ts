@@ -15,7 +15,9 @@ export { default as Kbd } from './components/data-display/Kbd.svelte';
 export { default as Progress } from './components/data-display/Progress.svelte';
 export { default as RadialProgress } from './components/data-display/RadialProgress.svelte';
 export { default as Stat } from './components/data-display/Stat.svelte';
+export { default as Stats } from './components/data-display/Stats.svelte';
 export { default as Table } from './components/data-display/Table.svelte';
+export { default as Row } from './components/data-display/Row.svelte';
 export { default as Tooltip } from './components/data-display/Tooltip.svelte';
 
 export { default as Checkbox } from './components/data-input/Checkbox.svelte';
@@ -23,6 +25,7 @@ export { default as FileInput } from './components/data-input/FileInput.svelte';
 export { default as Radio } from './components/data-input/Radio.svelte';
 export { default as Range } from './components/data-input/Range.svelte';
 export { default as Rating } from './components/data-input/Rating.svelte';
+export { default as Star } from './components/data-input/Star.svelte';
 export { default as Select } from './components/data-input/Select.svelte';
 export { default as TextInput } from './components/data-input/TextInput.svelte';
 export { default as Textarea } from './components/data-input/Textarea.svelte';
@@ -39,19 +42,33 @@ export { default as InputGroup } from './components/layout/InputGroup.svelte';
 export { default as Stack } from './components/layout/Stack.svelte';
 export { default as Toast } from './components/layout/Toast.svelte';
 
-export { default as Breadcrumbs } from './components/navigation/Breadcrumbs.svelte';
+export { default as Phone } from './components/mockup/Phone.svelte';
+export { default as Code } from './components/mockup/Code.svelte';
+export { default as Line } from './components/mockup/Line.svelte';
+export { default as Window } from './components/mockup/Window.svelte';
+
 export { default as BottomNavigation } from './components/navigation/BottomNavigation.svelte';
+export { default as Breadcrumbs } from './components/navigation/Breadcrumbs.svelte';
 export { default as Link } from './components/navigation/Link.svelte';
-export { default as Menu } from './components/navigation/Menu.svelte';
+// export { default as Menu } from './components/navigation/Menu.svelte';
+// export { default as MenuItem } from './components/navigation/MenuItem.svelte';
 export { default as Navbar } from './components/navigation/Navbar.svelte';
 export { default as Pagination } from './components/navigation/Pagination.svelte';
 export { default as Steps } from './components/navigation/Steps.svelte';
+export { default as Step } from './components/navigation/Step.svelte';
 export { default as Tabs } from './components/navigation/Tabs.svelte';
-
-export { default as Code } from './components/mockup/Code.svelte';
-export { default as Phone } from './components/mockup/Phone.svelte';
-export { default as Window } from './components/mockup/Window.svelte';
+export { default as Tab } from './components/navigation/Tab.svelte';
 
 export { Position } from './enums/position.enum';
 export { Size } from './enums/size.enum';
 export { Color } from './enums/color.enum';
+export { Vertical } from './enums/vertical.enum';
+export { Horizontal } from './enums/horizontal.enum';
+
+export type { ButtonType } from './interfaces/button.interface';
+export type { ImageType } from './interfaces/image.interface';
+export type { RowType } from './interfaces/row.interface';
+export type { LinkType } from './interfaces/link.interface';
+export type { StatType } from './interfaces/stat.interface';
+export type { StepType } from './interfaces/step.interface';
+export type { TabType } from './interfaces/tab.interface';
