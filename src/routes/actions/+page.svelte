@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { Position } from '../../lib/enums/position.enum';
-	import { Size } from '../../lib/enums/size.enum';
-	import { Color } from '../../lib/enums/color.enum';
+	import { Position } from '$lib/enums/position.enum';
 
 	import Button from '$lib/components/actions/Button.svelte';
 	import Modal from '$lib/components/actions/Modal.svelte';
@@ -12,7 +10,7 @@
 <h1>Actions</h1>
 
 <!-- Tested -->
-<Button color="primary" size="lg">Button</Button>
+<Button color="secondary" size="xs">Button</Button>
 
 <!-- Tested -->
 <Swap>
