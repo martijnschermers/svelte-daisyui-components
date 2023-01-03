@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Color } from '$lib/enums/color.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 
-	export let color: Color | string = Color.Neutral;
-	export let focusColor: Color | string = Color.Neutral;
+	export let color: Color | ColorStrings = Color.Neutral;
+	export let focusColor: Color | ColorStrings = Color.Neutral;
 	export let bordered: boolean = false;
 	export let arrow: boolean = false;
 	export let plus: boolean = false;

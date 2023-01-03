@@ -3,3 +3,5 @@ export enum Vertical {
     Middle = 'middle',
     Bottom = 'bottom'
 }
+
+export type VerticalStrings = 'top' | 'middle' | 'bottom'; 

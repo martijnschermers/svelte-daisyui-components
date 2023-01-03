@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { Color } from '$lib/enums/color.enum';
-	import { Horizontal } from '$lib/enums/horizontal.enum';
-	import { Vertical } from '$lib/enums/vertical.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
+	import { Horizontal, type HorizontalStrings } from '$lib/enums/horizontal.enum';
+	import { Vertical, type VerticalStrings } from '$lib/enums/vertical.enum';
 
-	export let color: Color | string = Color.Secondary;
-	export let horizontal: Horizontal | string = Horizontal.End;
-	export let vertical: Vertical | string = Vertical.Top;
+	export let color: Color | ColorStrings = Color.Secondary;
+	export let horizontal: Horizontal | HorizontalStrings = Horizontal.End;
+	export let vertical: Vertical | VerticalStrings = Vertical.Top;
 	export let badge: boolean = true;
 	export let responsive: boolean = false;
 </script>

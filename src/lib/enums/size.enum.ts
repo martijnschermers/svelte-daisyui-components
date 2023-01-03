@@ -4,3 +4,5 @@ export enum Size {
     Md = 'md',
     Lg = 'lg'
 }
+
+export type SizeStrings = 'xs' | 'sm' | 'md' | 'lg'; 

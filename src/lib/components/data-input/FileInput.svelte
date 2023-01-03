@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Color } from '$lib/enums/color.enum';
-	import { Size } from '$lib/enums/size.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
+	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 
 	export let name: string = 'file-input';
-	export let size: Size | string = Size.Md;
-	export let color: Color | string = Color.Neutral;
+	export let color: Color | ColorStrings = Color.Neutral;
+	export let size: Size | SizeStrings = Size.Md;
 	export let bordered: boolean = false;
 	export let ghost: boolean = false;
 	export let disabled: boolean = false;

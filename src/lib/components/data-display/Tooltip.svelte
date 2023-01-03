@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Color } from '$lib/enums/color.enum';
-	import { Position } from '$lib/enums/position.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
+	import { Position, type PositionStrings } from '$lib/enums/position.enum';
 
 	export let tip: string;
-	export let color: Color | string = Color.Neutral;
-	export let position: Position | string = Position.Top;
+	export let color: Color | ColorStrings = Color.Neutral;
+	export let position: Position | PositionStrings = Position.Top;
 	export let open: boolean = false;
 </script>
 

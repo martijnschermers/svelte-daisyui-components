@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Size } from '$lib/enums/size.enum';
+	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 	import type { LinkType } from '$lib/interfaces/link.interface';
 
 	export let links: LinkType[] = [];
-	export let size: Size | string = '';
+	export let size: Size | SizeStrings = Size.Sm;
 </script>
 
 <div class="text-sm breadcrumbs {$$props.class ? $$props.class : ''}" 

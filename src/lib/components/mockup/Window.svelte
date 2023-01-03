@@ -1,5 +1,7 @@
 <script lang="ts">
-	export let color: string = '';
+	import type { Color, ColorStrings } from '$lib/enums/color.enum';
+
+	export let color: Color | ColorStrings = '';
 	export let bordered: boolean = true;
 </script>
 

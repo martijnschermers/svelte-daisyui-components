@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Color } from '$lib/enums/color.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 
-	export let ring: Color | string = '';
+	export let ring: Color | ColorStrings = '';
 	export let online: boolean = false;
 	export let offline: boolean = false;
 </script>

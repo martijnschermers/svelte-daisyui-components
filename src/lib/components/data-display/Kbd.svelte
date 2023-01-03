@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Size } from '$lib/enums/size.enum';
+	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 
-	export let size: Size | string = Size.Md;
+	export let size: Size | SizeStrings = Size.Md;
 </script>
 
 <kbd

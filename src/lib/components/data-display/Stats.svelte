@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { StatType } from '$lib/interfaces/stat.interface';
-	import { Color } from '$lib/enums/color.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 	import Button from '$lib/components/actions/Button.svelte';
 	import Stat from '$lib/components/data-display/Stat.svelte';
 
 	export let stats: StatType[] = [];
-	export let color: Color | string = Color.Neutral;
+	export let color: Color | ColorStrings = Color.Neutral;
 	export let vertical: boolean = false;
 	export let centered: boolean = false;
 	export let responsive: boolean = false;

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Star from '$lib/components/data-input/Star.svelte';
 
-	export let name: string;
+	export let name: string = 'star';
 	export let mask: 'star' | 'star-2' | 'heart' = 'star';
 	export let half: boolean = false;
 	export let hidden: boolean = false;

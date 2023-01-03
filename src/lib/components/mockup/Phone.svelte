@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Color } from '../../enums/color.enum';
+	import { Color, type ColorStrings } from '../../enums/color.enum';
 
-	export let color: Color | string = Color.Neutral;
+	export let color: Color | ColorStrings = Color.Neutral;
 </script>
 
 <div

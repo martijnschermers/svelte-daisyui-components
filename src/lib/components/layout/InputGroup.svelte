@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { Size } from '$lib/enums/size.enum';
+	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 
     export let id: string = 'input-group'; 
-	export let size: Size | string = Size.Md;
+	export let size: Size | SizeStrings = Size.Md;
 	export let vertical: boolean = false;
 </script>
 

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Size } from '$lib/enums/size.enum';
+	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 	import type { ButtonType } from '$lib/interfaces/button.interface';
 
 	export let buttons: ButtonType[] = [];
-	export let size: Size | string = Size.Md;
+	export let size: Size | SizeStrings = Size.Md;
 </script>
 
 <div

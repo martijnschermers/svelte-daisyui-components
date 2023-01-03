@@ -4,3 +4,5 @@ export enum Position {
     Left = 'left',
     Right = 'right',
 }
+
+export type PositionStrings = 'bottom' | 'top' | 'left' | 'right'; 

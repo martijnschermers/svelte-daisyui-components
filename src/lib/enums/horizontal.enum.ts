@@ -3,3 +3,5 @@ export enum Horizontal {
     Center = 'center',
     End = 'end'
 }
+
+export type HorizontalStrings = 'start' | 'center' | 'end'; 

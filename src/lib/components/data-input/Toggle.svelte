@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Color } from '$lib/enums/color.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 	import { Size } from '$lib/enums/size.enum';
 
-	export let color: Color | string = Color.Primary;
-	export let size: Size | string = Size.Md;
+	export let color: Color | ColorStrings = Color.Primary;
+	export let size: Size | ColorStrings = Size.Md;
 	export let disabled: boolean = false;
 	export let indeterminate: boolean = false;
 	export let checked: boolean = true;

@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { Size } from '$lib/enums/size.enum';
+	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 
 	export let href: string;
 	export let bordered: boolean = false;
 	export let lifted: boolean = false;
-	export let size: Size | string = Size.Md;
+	export let size: Size | SizeStrings = Size.Md;
 	export let active: boolean = false;
 </script>
 

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { Color } from '$lib/enums/color.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 
 	export let value: number;
 	export let size: string = '4rem';
 	export let thickness: string = '.4rem';
-	export let color: Color | string = Color.Neutral;
-	export let background: Color | string = '';
-	export let border: Color | string = '';
+	export let color: Color | ColorStrings = Color.Neutral;
+	export let background: Color | ColorStrings = '';
+	export let border: Color | ColorStrings = '';
 </script>
 
 <div

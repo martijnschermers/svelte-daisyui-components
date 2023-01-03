@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Horizontal } from '$lib/enums/horizontal.enum';
-	import { Vertical } from '$lib/enums/vertical.enum';
+	import { Horizontal, type HorizontalStrings } from '$lib/enums/horizontal.enum';
+	import { Vertical, type VerticalStrings } from '$lib/enums/vertical.enum';
 
-	export let horizontal: Horizontal | string = Horizontal.End;
-	export let vertical: Vertical | string = Vertical.Bottom;
+	export let horizontal: Horizontal | HorizontalStrings = Horizontal.End;
+	export let vertical: Vertical | VerticalStrings = Vertical.Bottom;
 </script>
 
 <div

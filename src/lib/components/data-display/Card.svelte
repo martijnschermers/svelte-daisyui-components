@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Color } from '$lib/enums/color.enum';
+	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 
-	export let color: Color | string = '';
+	export let color: Color | ColorStrings = '';
 	export let bordered: boolean = false;
 	export let background: boolean = false;
 	export let compact: boolean = false;

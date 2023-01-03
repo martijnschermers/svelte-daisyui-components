@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { Size } from '$lib/enums/size.enum';
+	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 	import type { ButtonType } from '$lib/interfaces/button.interface';
 	import Button from '$lib/components/actions/Button.svelte';
 	import ButtonGroup from '$lib/components/layout/ButtonGroup.svelte';
 
 	export let buttons: ButtonType[] = [];
-	export let size: Size | string = Size.Md;
+	export let size: Size | SizeStrings = Size.Md;
 </script>
 
 <ButtonGroup>
