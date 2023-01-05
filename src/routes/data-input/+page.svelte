@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Select, Checkbox, Radio, Range } from '$lib';
+	import { Select, Checkbox, Radio, Range, Rating } from '$lib';
 
 	let options: string[] = ['Choose a option', 'option1', 'option2', 'options3'];
 </script>
@@ -17,3 +17,5 @@
 <Radio />
 
 <Range value={10} step={10} steps={true} />
+
+<Rating half={true} amount={10} />
