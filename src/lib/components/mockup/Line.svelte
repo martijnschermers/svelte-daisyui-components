@@ -21,8 +21,5 @@
 	class:text-warning-content={color == Color.Warning}
 	class:bg-error={color == Color.Error}
 	class:text-error-content={color == Color.Error}
-	data-prefix={prefix}>
-    <code>
-        <slot />
-    </code>
+	data-prefix={prefix}><code><slot /></code>
 </pre>

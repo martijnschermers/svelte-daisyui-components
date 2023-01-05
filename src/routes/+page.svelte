@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Image, ButtonInterface } from '$lib';
+	import type { ImageType, ButtonType } from '$lib';
 	import { Card, Kbd } from '$lib';
 	import Progress from '$lib/components/data-display/Progress.svelte';
 	import Alert from '$lib/components/data-display/Alert.svelte';
@@ -17,7 +17,7 @@
 	import RadialProgress from '$lib/components/data-display/RadialProgress.svelte';
 	import Navbar from '$lib/components/navigation/Navbar.svelte';
 
-	let images: Image[] = [
+	let images: ImageType[] = [
 		{
 			src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png',
 			alt: 'Test'
@@ -28,7 +28,7 @@
 		}
 	];
 
-	let buttons = [
+	let buttons: ButtonType[] = [
 		{
 			title: '1'
 		},
