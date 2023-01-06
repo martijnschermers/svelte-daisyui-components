@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 
-    export let color: Color | ColorStrings = Color.Neutral;
+	export let color: Color | ColorStrings = Color.Neutral;
 	export let end: boolean = false;
 </script>
 
@@ -13,6 +13,9 @@
 			</div>
 		</div>
 	{/if}
+	<div class="chat-header">
+		<slot name="header" />
+	</div>
 	<div
 		class="chat-bubble"
 		class:chat-bubble-primary={color == Color.Primary}
@@ -25,4 +28,7 @@
 	>
 		<slot />
 	</div>
+	<div class="chat-footer opacity-50">
+        <slot name="footer" />
+    </div>
 </div>

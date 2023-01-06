@@ -9,5 +9,9 @@
 <div class="modal" class:modal-bottom={responsive} class:sm:modal-middle={responsive}>
 	<div class="modal-box {$$props.class ? $$props.class : ''}">
 		<slot />
+
+		<div class="modal-action">
+			<slot name="action" />
+		</div>
 	</div>
 </div>
