@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+    @apply text-4xl font-bold text-center; 
+}
+
+.components {
+    @apply flex flex-col justify-center bg-base-200; 
+}
