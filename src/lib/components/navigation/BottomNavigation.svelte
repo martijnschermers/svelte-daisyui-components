@@ -24,8 +24,8 @@
 			>
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={button.svgPath} />
 			</svg>
-			{#if button.title}
-				<span class="btm-nav-label">{button.title}</span>
+			{#if button.text}
+				<span class="btm-nav-label">{button.text}</span>
 			{/if}
 		</button>
 	{:else}
