@@ -1,6 +1,8 @@
 <script lang="ts">
 	export let reverse: boolean = false;
 	export let overlayImage: string = '';
+
+    overlayImage = `url(${overlayImage})`;
 </script>
 
 <div class="hero min-h-screen bg-base-200 {$$props.class ? $$props.class : ''}" style:background-image={overlayImage}>
