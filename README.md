@@ -1,38 +1,80 @@
-# create-svelte
+# Svelte daisyUI Components
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Svelte components for the daisyUI component library. Written in Svelte and Typescript.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Full Typescript support
+- Almost all components fully implemented
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Installation
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install [tailwindcss](https://tailwindcss.com/docs/guides/sveltekit) and [daisyui](https://daisyui.com/docs/install/) with npm
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+  npm i -D tailwindcss postcss autoprefixer daisyui
 ```
 
-## Building
-
-To create a production version of your app:
+Install svelte-daisyui-components with npm
 
 ```bash
-npm run build
+  npm i svelte-daisyui-components
+```
+    
+## Usage/Examples
+For some very basic examples you can take a look at the provided routes, located in the routes directory of this repository. 
+
+```typescript
+<script lang="ts">
+    import { Button } from 'svelte-daisyui-components'
+</script>
+
+<Button>Button</Button>
 ```
 
-You can preview the production build with `npm run preview`.
+## Components
+Missing features on components. 
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Actions: 
+All features are implemented. 
+
+Data Display: 
+- Avatar: not possible to apply mask and add counter.
+- Card: not possible to add action on top. 
+- Carousel: navigation buttons not working properly. 
+- Collapse: colors on focus not working properly. 
+
+Data Input: 
+- Radio: not possible to add labels.
+- Checkbox: not possible to add labels. 
+- Toggle: not possible to add labels. 
+- Range: steps and measure not always accurate. 
+
+Layout: 
+- Drawer: navbar on desktop and drawer on mobile option not implemented. 
+- Hero: figure not implemented. 
+- Indicator: multiple indicators not implemented.
+
+Navigation: 
+- BottomNavigation: rendering buttons through buttons prop not working properly. 
+- Steps: user needs to provide data himself if steps are added through slot. 
+
+Mockup: 
+All features are implemented. 
+## Roadmap
+
+- Add Storybook. 
+- Extract string values from enums instead of hardcoding them.
+- Fix/add missing features on components. 
+- Write tests for components. 
+- Figure out on which element we want to apply $$props.class, sometimes you want to apply styles to multiple elements. 
+- Apply $$restProps to relevant components. 
+
+## Contributing
+
+Contributions are always welcome!
+If you encounter a bug or missing feature, feel free to open a pull request or issue!
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
