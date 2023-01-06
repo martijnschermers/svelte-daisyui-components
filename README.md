@@ -26,7 +26,7 @@ For some very basic examples you can take a look at the provided routes, located
 
 ```typescript
 <script lang="ts">
-    import { Button } from 'svelte-daisyui'
+    import { Button } from 'svelte-daisyui-components'
 </script>
 
 <Button>Button</Button>
