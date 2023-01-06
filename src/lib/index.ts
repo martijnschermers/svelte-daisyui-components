@@ -5,6 +5,7 @@ import Swap from './components/actions/Swap.svelte';
 
 import Alert from './components/data-display/Alert.svelte';
 import Avatar from './components/data-display/Avatar.svelte';
+import AvatarGroup from './components/data-display/AvatarGroup.svelte';
 import Badge from './components/data-display/Badge.svelte';
 import Card from './components/data-display/Card.svelte';
 import Carousel from './components/data-display/Carousel.svelte';
@@ -50,8 +51,9 @@ import Window from './components/mockup/Window.svelte';
 import BottomNavigation from './components/navigation/BottomNavigation.svelte';
 import Breadcrumbs from './components/navigation/Breadcrumbs.svelte';
 import Link from './components/navigation/Link.svelte';
-// import Menu from './components/navigation/Menu.svelte';
-// import MenuItem from './components/navigation/MenuItem.svelte';
+import Menu from './components/navigation/Menu.svelte';
+import Submenu from './components/navigation/Submenu.svelte';
+import ListItem from './components/navigation/ListItem.svelte';
 import Navbar from './components/navigation/Navbar.svelte';
 import Pagination from './components/navigation/Pagination.svelte';
 import Steps from './components/navigation/Steps.svelte';
@@ -75,10 +77,10 @@ import type { TabType } from './interfaces/tab.interface';
 
 export {
     Button, Dropdown, Modal, Swap,
-    Alert, Avatar, Badge, Card, Carousel, ChatBubble, Collapse, Countdown, Kbd, Progress, RadialProgress, Stat, Stats, Table, Row, Tooltip,
+    Alert, Avatar, AvatarGroup, Badge, Card, Carousel, ChatBubble, Collapse, Countdown, Kbd, Progress, RadialProgress, Stat, Stats, Table, Row, Tooltip,
     Checkbox, FileInput, Radio, Range, Rating, Star, Select, TextInput, Textarea, Toggle,
     Artboard, ButtonGroup, Divider, Drawer, Footer, Hero, Indicator, InputGroup, Stack, Toast,
-    Breadcrumbs, BottomNavigation, Link, /* Menu , MenuItem , */ Navbar, Pagination, Steps, Step, Tabs, Tab,
+    Breadcrumbs, BottomNavigation, Link, Menu, Submenu, ListItem, Navbar, Pagination, Steps, Step, Tabs, Tab,
     Code, Line, Phone, Window,
     Position, Size, Color, Vertical, Horizontal,
     ButtonType, ImageType, RowType, LinkType, StatType, StepType, TabType
