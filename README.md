@@ -7,7 +7,6 @@ Svelte components for the daisyUI component library. Written in Svelte and Types
 - Full Typescript support
 - Almost all components fully implemented
 
-
 ## Installation
 
 Install [tailwindcss](https://tailwindcss.com/docs/guides/sveltekit) and [daisyui](https://daisyui.com/docs/install/) with npm
@@ -16,10 +15,10 @@ Install [tailwindcss](https://tailwindcss.com/docs/guides/sveltekit) and [daisyu
   npm i -D tailwindcss postcss autoprefixer daisyui
 ```
 
-Install svelte-daisyui with npm
+Install svelte-daisyui-components with npm
 
 ```bash
-  npm i svelte-daisyui
+  npm i svelte-daisyui-components
 ```
     
 ## Usage/Examples
@@ -32,7 +31,6 @@ For some very basic examples you can take a look at the provided routes, located
 
 <Button>Button</Button>
 ```
-
 
 ## Components
 Missing features on components. 
@@ -72,12 +70,10 @@ All features are implemented.
 - Figure out on which element we want to apply $$props.class, sometimes you want to apply styles to multiple elements. 
 - Apply $$restProps to relevant components. 
 
-
 ## Contributing
 
 Contributions are always welcome!
 If you encounter a bug or missing feature, feel free to open a pull request or issue!
-
 
 ## License
 
