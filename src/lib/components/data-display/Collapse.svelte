@@ -8,6 +8,8 @@
 	export let plus: boolean = false;
 	export let open: boolean = false;
 	export let close: boolean = false;
+
+    let classes = `bg-${color} text-${color}-content group-focus:bg-${focusColor} group-focus:text-${focusColor}-content`;
 </script>
 
 <div
@@ -20,10 +22,10 @@
 	class:collapse-close={close}
 	class:group={color && focusColor}
 >
-	<div class="collapse-title text-xl font-medium">
+	<div class="collapse-title text-xl font-medium {classes}">
 		<slot name="title" />
 	</div>
-	<div class="collapse-content">
-		<slot name="content" />
+	<div class="collapse-content {classes}">
+		<slot />
 	</div>
 </div>
