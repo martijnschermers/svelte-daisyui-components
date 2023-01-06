@@ -2,10 +2,8 @@
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 
-	export let name: string = 'radio';
 	export let color: Color | ColorStrings = Color.Neutral;
 	export let size: Size | SizeStrings = Size.Md;
-	export let disabled: boolean = false;
 	export let checked: boolean = true;
 </script>
 
@@ -25,8 +23,6 @@
 		class:radio-warning={color == Color.Warning}
 		class:radio-error={color == Color.Error}
 		checked={index == 0 ? checked : !checked}
-		{name}
-		{disabled}
 		{...$$restProps}
 	/>
 {/each}

@@ -2,13 +2,10 @@
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 
-	export let name: string = 'text-input';
-	export let placeholder: string = '';
 	export let color: Color | ColorStrings = Color.Neutral;
 	export let size: Size | SizeStrings = Size.Md;
 	export let bordered: boolean = false;
 	export let ghost: boolean = false;
-	export let disabled: boolean = false;
 </script>
 
 <div class="form-control w-full max-w-xs">
@@ -34,9 +31,6 @@
 		class:input-lg={size == Size.Lg}
 		class:input-ghost={ghost}
 		class:input-bordered={bordered}
-		{name}
-		{placeholder}
-		{disabled}
 		{...$$restProps}
 	/>
 	{#if $$slots['label-3'] || $$slots['label-4']}

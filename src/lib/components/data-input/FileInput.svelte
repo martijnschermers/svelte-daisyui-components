@@ -2,12 +2,10 @@
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 
-	export let name: string = 'file-input';
 	export let color: Color | ColorStrings = Color.Neutral;
 	export let size: Size | SizeStrings = Size.Md;
 	export let bordered: boolean = false;
 	export let ghost: boolean = false;
-	export let disabled: boolean = false;
 </script>
 
 <div class="form-control w-full max-w-xs">
@@ -33,8 +31,6 @@
 		class:file-input-error={color == Color.Error}
 		class:file-input-bordered={bordered}
 		class:file-input-ghost={ghost}
-		{disabled}
-		{name}
 		{...$$restProps}
 	/>
 	{#if $$slots['label-3'] || $$slots['label-4']}

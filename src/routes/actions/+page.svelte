@@ -2,10 +2,10 @@
 	import { Button, Modal, Swap, Dropdown, ListItem } from '$lib';
 </script>
 
-<h1 class="text-4xl font-bold text-center">Actions</h1>
+<h1 class="header">Actions</h1>
 
-<div class="flex justify-center flex-col">
-	<Button color="secondary">Button</Button>
+<div class="components">
+	<Button disabled="true" color="secondary">Button</Button>
 
 	<Swap>
 		<div slot="on">ON</div>

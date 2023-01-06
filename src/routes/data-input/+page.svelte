@@ -23,7 +23,7 @@
 
 	<Radio />
 
-	<Range value={5} />
+	<Range value="5" />
 
 	<Rating />
 
@@ -33,5 +33,5 @@
 
 	<Textarea placeholder="Bio" color="info" />
 
-	<Toggle />
+	<Toggle disabled="true" />
 </div>

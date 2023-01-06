@@ -10,7 +10,9 @@
 
 <ButtonGroup>
 	{#each buttons as button}
-		<Button on:click on:change {size} disabled={button.disabled} active={button.active}>{button.title}</Button>
+		<Button on:click on:change {size} disabled={button.disabled} active={button.active}>
+			{button.text}
+		</Button>
 	{:else}
 		<slot />
 	{/each}

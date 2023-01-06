@@ -13,7 +13,7 @@
 	class:lg:btn-group-horizontal={responsive}
 >
 	{#each buttons as button}
-		<Button on:click on:change>{button.title}</Button>
+		<Button on:click on:change>{button.text}</Button>
 	{:else}
 		<slot />
 	{/each}

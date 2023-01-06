@@ -2,12 +2,8 @@
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 	import { Size } from '$lib/enums/size.enum';
 
-    export let name: string = 'toggle'; 
 	export let color: Color | ColorStrings = Color.Neutral;
 	export let size: Size | ColorStrings = Size.Md;
-	export let disabled: boolean = false;
-	export let indeterminate: boolean = false;
-	export let checked: boolean = true;
 </script>
 
 <input
@@ -24,9 +20,5 @@
 	class:toggle-sm={size == Size.Sm}
 	class:toggle-md={size == Size.Md}
 	class:toggle-lg={size == Size.Lg}
-	{indeterminate}
-	{disabled}
-	{checked}
-    {name}
-    {...$$restProps}
+	{...$$restProps}
 />

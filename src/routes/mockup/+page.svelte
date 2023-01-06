@@ -4,10 +4,12 @@
 
 <h1 class="header">Mockup</h1>
 
-<Code>
-	<Line prefix="$">npm i daisyui</Line>
-</Code>
+<div class="components">
+	<Code>
+		<Line prefix="$">npm i daisyui</Line>
+	</Code>
 
-<Phone>Hi.</Phone>
+	<Phone>Hi.</Phone>
 
-<Window>Hello!</Window>
+	<Window>Hello!</Window>
+</div>

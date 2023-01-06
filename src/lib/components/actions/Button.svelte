@@ -8,7 +8,6 @@
 	export let outline: boolean = false;
 	export let wide: boolean = false;
 	export let glass: boolean = false;
-	export let disabled: boolean = false;
 	export let square: boolean = false;
 	export let circle: boolean = false;
 	export let block: boolean = false;
@@ -46,7 +45,6 @@
 	class:loading
 	on:click
 	on:change
-	{disabled}
 	{...$$restProps}
 >
 	<slot />

@@ -2,14 +2,11 @@
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 	import { Size, type SizeStrings } from '$lib/enums/size.enum';
 
-	export let name: string = 'select';
 	export let options: string[] = [];
 	export let color: Color | ColorStrings = Color.Neutral;
 	export let size: Size | SizeStrings = Size.Md;
-	export let disabled: boolean = false;
 	export let bordered: boolean = false;
 	export let ghost: boolean = false;
-    export let multiple: boolean = false; 
 
 	let classes = $$props.class ? $$props.class : '';
 </script>
@@ -36,9 +33,6 @@
 		class:select-lg={size == Size.Lg}
 		class:select-bordered={bordered}
 		class:select-ghost={ghost}
-		{name}
-		{disabled}
-        {multiple}
 		{...$$restProps}
 	>
 		{#each options as option, index}

@@ -21,7 +21,6 @@
 
 <div class="components">
 	<Hero>
-		<img src="https://placeimg.com/260/400/arch" class="max-w-sm rounded-lg shadow-2xl" />
 		<h1 class="text-5xl font-bold">Hello there</h1>
 		<p class="py-6">
 			Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem

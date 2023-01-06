@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 
-	export let value: number;
+	export let value: number | string;
 	export let size: string = '4rem';
 	export let thickness: string = '.4rem';
 	export let color: Color | ColorStrings = Color.Neutral;
