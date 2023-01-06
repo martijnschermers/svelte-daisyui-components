@@ -1,5 +1,13 @@
 <script lang="ts">
-	import Code from "$lib/components/mockup/Code.svelte";
+	import { Code, Line, Phone, Window } from '$lib';
 </script>
 
-<Code color="warning">This is code</Code>
+<h1 class="header">Mockup</h1>
+
+<Code>
+	<Line prefix="$">npm i daisyui</Line>
+</Code>
+
+<Phone>Hi.</Phone>
+
+<Window>Hello!</Window>

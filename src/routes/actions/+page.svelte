@@ -1,36 +1,29 @@
 <script lang="ts">
-	import { Position } from '$lib/enums/position.enum';
-
-	import Button from '$lib/components/actions/Button.svelte';
-	import Modal from '$lib/components/actions/Modal.svelte';
-	import Swap from '$lib/components/actions/Swap.svelte';
-	import Dropdown from '$lib/components/actions/Dropdown.svelte';
+	import { Button, Modal, Swap, Dropdown, ListItem } from '$lib';
 </script>
 
-<h1>Actions</h1>
+<h1 class="text-4xl font-bold text-center">Actions</h1>
 
-<!-- Tested -->
-<Button color="secondary" size="xs">Button</Button>
+<div class="flex justify-center flex-col">
+	<Button color="secondary">Button</Button>
 
-<!-- Tested -->
-<Swap>
-	<div slot="on">ON</div>
-	<div slot="off">OFF</div>
-</Swap>
+	<Swap>
+		<div slot="on">ON</div>
+		<div slot="off">OFF</div>
+	</Swap>
 
-<Modal responsive={true}>
-	<p slot="label">Open modal</p>
-	<p slot="title">Congratulations random Internet user!</p>
-	<p slot="body">
-		You've been selected for a chance to get one year of subscription to use Wikipedia for free!
-	</p>
-	<p class="btn" slot="action">Yay!</p>
-</Modal>
+	<Modal responsive={true}>
+		<p slot="label">Open modal</p>
+		<h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+		<p class="py-4">
+			You've been selected for a chance to get one year of subscription to use Wikipedia for free!
+		</p>
+		<label for="my-modal" class="btn">Yay!</label>
+	</Modal>
 
-<Dropdown position={Position.Left} end={false}>
-	<p slot="label">Click</p>
-	<div slot="items">
-		<li><a href="#">Item 1</a></li>
-		<li><a href="#">Item 2</a></li>
-	</div>
-</Dropdown>
+	<Dropdown end={false}>
+		<p slot="label">Click</p>
+		<ListItem href="#">Item 1</ListItem>
+		<ListItem href="#">Item 2</ListItem>
+	</Dropdown>
+</div>

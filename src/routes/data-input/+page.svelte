@@ -1,21 +1,37 @@
 <script lang="ts">
-	import { Select, Checkbox, Radio, Range, Rating } from '$lib';
+	import {
+		Select,
+		Checkbox,
+		Radio,
+		Range,
+		Rating,
+		Textarea,
+		Toggle,
+		FileInput,
+		TextInput
+	} from '$lib';
 
-	let options: string[] = ['Choose a option', 'option1', 'option2', 'options3'];
+	let options: string[] = ['Choose a option', 'option1', 'option2', 'option3'];
 </script>
 
-<!-- Tested -->
-<Select disabled={true} bordered={true} ghost={false} {options}>
-	<p slot="label-1">Label 1</p>
-	<p slot="label-2">Label 2</p>
-	<p slot="label-3">Label 3</p>
-	<p slot="label-4">Label 4</p>
-</Select>
+<h1 class="header">Data Input</h1>
 
-<Checkbox indeterminate={true} color="primary" size="lg" />
+<div class="components">
+	<Checkbox checked="true" color="primary" />
 
-<Radio />
+	<FileInput />
 
-<Range value={10} step={10} steps={true} />
+	<Radio />
 
-<Rating half={true} amount={10} />
+	<Range value={5} />
+
+	<Rating />
+
+	<Select color="primary" {options} />
+
+	<TextInput placeholder="Type here" color="secondary" />
+
+	<Textarea placeholder="Bio" color="info" />
+
+	<Toggle />
+</div>
