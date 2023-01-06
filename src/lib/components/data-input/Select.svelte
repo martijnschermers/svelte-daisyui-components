@@ -9,8 +9,9 @@
 	export let disabled: boolean = false;
 	export let bordered: boolean = false;
 	export let ghost: boolean = false;
+    export let multiple: boolean = false; 
 
-    let classes = $$props.class ? $$props.class : ''; 
+	let classes = $$props.class ? $$props.class : '';
 </script>
 
 <div class="form-control {classes}">
@@ -37,6 +38,8 @@
 		class:select-ghost={ghost}
 		{name}
 		{disabled}
+        {multiple}
+		{...$$restProps}
 	>
 		{#each options as option, index}
 			{#if index == 0}

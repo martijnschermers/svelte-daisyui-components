@@ -3,9 +3,10 @@
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 
 	export let value: number;
+	export let name: string = 'range';
 	export let max: number = 100;
 	export let min: number = 0;
-	export let step: number = 25;
+	export let step: number = 0;
 	export let steps: boolean = false;
 	export let color: Color | ColorStrings = Color.Neutral;
 	export let size: Size | SizeStrings = Size.Md;
@@ -29,6 +30,8 @@
 	{max}
 	{value}
 	{step}
+	{name}
+	{...$$restProps}
 />
 {#if steps}
 	<div class="w-full flex justify-between text-xs px-2">

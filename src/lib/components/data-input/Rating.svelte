@@ -23,12 +23,13 @@
 	class:rating-md={size == Size.Md}
 	class:rating-lg={size == Size.Lg}
 	class:rating-half={half}
+	{...$$restProps}
 >
 	{#if hidden}
 		<input type="radio" {name} class="rating-hidden" />
 	{/if}
 
 	{#each { length: amount } as _, index}
-		<Star {name} {mask} {checked} {half} {index} {amount} />
+		<Star {name} {mask} {checked} {half} {index} />
 	{/each}
 </div>

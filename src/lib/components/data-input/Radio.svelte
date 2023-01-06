@@ -27,5 +27,6 @@
 		checked={index == 0 ? checked : !checked}
 		{name}
 		{disabled}
+		{...$$restProps}
 	/>
 {/each}

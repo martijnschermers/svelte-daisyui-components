@@ -37,6 +37,7 @@
 		{name}
 		{placeholder}
 		{disabled}
+		{...$$restProps}
 	/>
 	{#if $$slots['label-3'] || $$slots['label-4']}
 		<label class="label">

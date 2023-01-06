@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 
+	export let name: string = 'textarea';
 	export let placeholder: string = '';
 	export let color: Color | ColorStrings = Color.Neutral;
 	export let bordered: boolean = false;
@@ -21,4 +22,6 @@
 	class:textarea-ghost={ghost}
 	{placeholder}
 	{disabled}
+	{name}
+	{...$$restProps}
 />
