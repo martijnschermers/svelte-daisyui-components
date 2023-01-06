@@ -1,10 +1,11 @@
+import type { Color, ColorStrings } from "$lib/enums/color.enum";
 import type { Size } from "../enums/size.enum";
 
 export interface ButtonType {
-    title?: string;
+    text?: string;
     svgPath?: string;
     active?: boolean;
-    color?: string;
     disabled?: boolean;
+    color?: Color | ColorStrings;
     size?: Size;
 }

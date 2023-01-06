@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let size: 1 | 2 | 3 | 4 | 5 | 6 = 1;
 	export let horizontal: boolean = false;
-	export let demo: boolean = false;
+	export let demo: boolean = true;
 </script>
 
 <div

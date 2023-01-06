@@ -4,16 +4,7 @@
 
 	export let color: Color | ColorStrings = Color.Neutral;
 	export let size: Size | SizeStrings = Size.Md;
-	export let checked: boolean = true;
-	export let indeterminate: boolean = false;
-	export let disabled: boolean = false;
 </script>
-
-<div class="form-control">
-	<label class="label cursor-pointer">
-		<span class="label-text"><slot /></span>
-	</label>
-</div>
 
 <input
 	type="checkbox"
@@ -29,7 +20,5 @@
 	class:checkbox-success={color == Color.Success}
 	class:checkbox-warning={color == Color.Warning}
 	class:checkbox-error={color == Color.Error}
-	{indeterminate}
-	{disabled}
-	{checked}
+	{...$$restProps}
 />

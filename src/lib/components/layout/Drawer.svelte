@@ -5,7 +5,7 @@
 </script>
 
 <div class="drawer {$$props.class ? $$props.class : ''}" class:drawer-mobile={mobile} class:drawer-end={end}>
-	<input {id} type="checkbox" class="drawer-toggle" />
+	<input {id} {...$$restProps} type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content">
 		<label for={id} class="btn btn-primary drawer-button" class:lg:hidden={mobile}>
 			<slot name="label" />
@@ -14,7 +14,7 @@
 	<div class="drawer-side">
 		<label for={id} class="drawer-overlay" />
 		<ul class="menu p-4 w-80 bg-base-100 text-base-content">
-			<slot name="content" />
+			<slot />
 		</ul>
 	</div>
 </div>

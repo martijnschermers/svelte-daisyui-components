@@ -6,11 +6,12 @@
 	export let size: Size | SizeStrings = Size.Sm;
 </script>
 
-<div class="text-sm breadcrumbs {$$props.class ? $$props.class : ''}" 
-    class:max-w-xs={size == Size.Xs}
-    class:max-w-sm={size == Size.Sm}
-    class:max-w-md={size == Size.Md}
-    class:max-w-lg={size == Size.Lg}
+<div
+	class="breadcrumbs text-sm {$$props.class ? $$props.class : ''}"
+	class:max-w-xs={size == Size.Xs}
+	class:max-w-sm={size == Size.Sm}
+	class:max-w-md={size == Size.Md}
+	class:max-w-lg={size == Size.Lg}
 >
 	<ul>
 		{#each links as link}

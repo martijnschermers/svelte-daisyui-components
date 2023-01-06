@@ -1,11 +1,7 @@
 <div class="stat {$$props.class ? $$props.class : ''}">
 	{#if $$slots.image}
 		<div class="stat-figure text-secondary">
-			<div class="avatar online">
-				<div class="w-16 rounded-full">
-					<slot name="image" />
-				</div>
-			</div>
+			<slot name="image" />
 		</div>
 	{/if}
 
@@ -14,4 +10,3 @@
 	<div class="stat-desc"><slot name="description" /></div>
 	<div class="stat-actions"><slot name="actions" /></div>
 </div>
-

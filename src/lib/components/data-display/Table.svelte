@@ -10,22 +10,23 @@
 
 <div class="overflow-x-auto {$$props.class ? $$props.class : ''}">
 	<table class="table w-full" class:table-zebra={zebra} class:table-compact={compact}>
-		<thead>
-			<tr>
-				{#each head as column}
-					<th>{column}</th>
-				{:else}
-					<slot name="head" />
-				{/each}
-			</tr>
-		</thead>
+		{#if head.length}
+			<thead>
+				<tr>
+					{#each head as column}
+						<th>{column}</th>
+					{/each}
+				</tr>
+			</thead>
+		{:else}
+			<slot name="head" />
+		{/if}
 		<tbody>
 			{#each rows as row}
 				<Row columns={row.columns} active={row.active} hover={row.hover} />
 			{:else}
-				<slot name="body" />
+				<slot />
 			{/each}
 		</tbody>
 	</table>
 </div>
-

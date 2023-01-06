@@ -19,6 +19,6 @@
 >
 	<label for="" tabindex="0" class="btn m-1"><slot name="label" /></label>
 	<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-		<slot name="items" />
+		<slot />
 	</ul>
 </div>

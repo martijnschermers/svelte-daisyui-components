@@ -12,8 +12,8 @@
 	class:steps-vertical={vertical || responsive}
 	class:lg:steps-horizontal={responsive}
 >
-	{#each steps as step}
-		<Step data={step.data} color={step.color}>{step.text}</Step>
+	{#each steps as step, index}
+		<Step data={step.data ? step.data : index} color={step.color}>{step.text}</Step>
 	{:else}
 		<slot />
 	{/each}

@@ -19,10 +19,7 @@
 </script>
 
 <button
-	{disabled}
 	class="btn {$$props.class ? $$props.class : ''}"
-	class:glass
-	class:loading
 	class:btn-xs={responsive || size == Size.Xs}
 	class:btn-sm={size == Size.Sm}
 	class:btn-md={size == Size.Md}
@@ -45,8 +42,12 @@
 	class:btn-circle={circle}
 	class:btn-block={block}
 	class:no-animation={!animation}
+	class:glass
+	class:loading
 	on:click
 	on:change
+	{disabled}
+	{...$$restProps}
 >
 	<slot />
 </button>
