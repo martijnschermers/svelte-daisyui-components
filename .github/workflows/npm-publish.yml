@@ -9,17 +9,7 @@ on:
       main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      # - run: npm test
-
-  publish-npm:
+  build-and-publish:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -28,8 +18,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: cd package 
-      - run: npm publish
+      - run: | 
+          npm ci
+          npm run build 
+          cd package 
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
