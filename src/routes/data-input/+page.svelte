@@ -33,5 +33,5 @@
 
 	<Textarea placeholder="Bio" color="info" />
 
-	<Toggle disabled="true" />
+	<Toggle />
 </div>
