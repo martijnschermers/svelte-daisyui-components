@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Color, type ColorStrings } from '$lib/enums/color.enum';
 	import type { LinkType } from '$lib/interfaces/link.interface';
-	import MenuItem from '$lib/components/navigation/MenuItem.svelte';
+	import ListItem from '$lib/components/navigation/ListItem.svelte';
 
 	export let items: LinkType[] = [];
 	export let color: Color | ColorStrings = Color.Primary;
@@ -39,7 +39,7 @@
 	{/if}
 
 	{#each items as item}
-		<MenuItem><a href={item.href}>{item.text}</a></MenuItem>
+		<ListItem href={item.href}>{item.text}</ListItem>
 	{:else}
 		<slot />
 	{/each}
