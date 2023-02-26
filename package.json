@@ -1,10 +1,11 @@
 {
     "name": "svelte-daisyui-components",
     "description": "Svelte components for the daisyUI component library.",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "author": "Martijn Schermers",
     "scripts": {
         "dev": "vite dev",
+        "preview": "vite preview",
         "build": "svelte-kit sync && svelte-package",
         "prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
         "test": "playwright test",
