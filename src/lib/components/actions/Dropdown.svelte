@@ -17,7 +17,9 @@
 	class:dropdown-hover={hover}
 	class:dropdown-open={open}
 >
+	<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 	<label for="" tabindex="0" class="btn m-1"><slot name="label" /></label>
+	<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 	<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
 		<slot />
 	</ul>

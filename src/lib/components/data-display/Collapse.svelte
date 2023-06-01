@@ -12,6 +12,7 @@
     let classes = `bg-${color} text-${color}-content group-focus:bg-${focusColor} group-focus:text-${focusColor}-content`;
 </script>
 
+<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <div
 	tabindex="0"
 	class="collapse {$$props.class ? $$props.class : ''}"

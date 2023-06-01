@@ -5,6 +5,7 @@
 	export let items: LinkType[] = [];
 </script>
 
+<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <li tabindex="0">
 	<span><slot name="label" /></span>
 	<ul class="bg-base-100">
