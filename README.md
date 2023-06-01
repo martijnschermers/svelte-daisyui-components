@@ -11,10 +11,6 @@ Svelte components for the daisyUI component library. Written in Svelte and Types
 
 Install [tailwindcss](https://tailwindcss.com/docs/guides/sveltekit) and [daisyui](https://daisyui.com/docs/install/) with npm
 
-```bash
-  npm i -D tailwindcss postcss autoprefixer daisyui
-```
-
 Install svelte-daisyui-components with npm
 
 ```bash
