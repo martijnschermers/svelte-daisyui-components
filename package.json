@@ -1,7 +1,7 @@
 {
     "name": "svelte-daisyui-components",
     "description": "Svelte components for the daisyUI component library.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": "Martijn Schermers",
     "scripts": {
         "dev": "vite dev",
@@ -17,7 +17,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/martijnschermers/svelte-daisyui.git"
+        "url": "https://github.com/martijnschermers/svelte-daisyui-components.git"
     },
     "license": "MIT",
     "dependencies": {
@@ -29,7 +29,7 @@
         "@sveltejs/kit": "^1.0.0",
         "@sveltejs/package": "^1.0.0",
         "autoprefixer": "^10.4.13",
-        "daisyui": "^2.46.0",
+        "daisyui": "^3.0.0",
         "postcss": "^8.4.20",
         "prettier": "^2.8.0",
         "prettier-plugin-svelte": "^2.8.1",
